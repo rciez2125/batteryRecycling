@@ -1,0 +1,50 @@
+% Specify the baseline assumptions, 50% lithium added to direct cathode
+% recovery, baseline scaling factor on transportation assumptions, 5000
+% runs in the Monte Carlo analysis
+monteCarloRuns = 100; 
+
+setLiPercent(0.5);
+setTransportSF(1);
+runRecyclingModel(monteCarloRuns); 
+
+% change to scaling factor of 2 on transportation
+setTransportSF(2);
+runRecycling(monteCarloRuns);
+
+% change to scaling factor of 4 on transportation
+setTransportSF(4);
+runRecycling(monteCarloRuns);
+
+% vary lithium percentage 
+
+% make the plots of the manufacturing emissions 
+manufacturingPlots;
+clf(1) 
+clf(2)
+
+% make the recycling emissions comparison plots (figure 3)
+recyclingPlots;
+clf(1);
+clf(2);
+ 
+% make the SI figures comparing pyrometallurgical & direct recycling
+compPyroDirectYieldEmissions; 
+
+% make the figures comparing direct recycling to doing nothing
+yieldRatePlots;
+
+% make relithination breakeven cost curve --> fix to be 50% 
+breakevenCostFigure; 
+clf(2)
+
+% make relithination cost curves 
+lithinationBreakevenFigs;
+clf(1)
+
+% print out data for comparison to other studies
+dataForCompTables;
+dataForCompTablesSI; 
+
+% run sensitivity analysis o
+liEmissionsSensitivityAnalysis
+

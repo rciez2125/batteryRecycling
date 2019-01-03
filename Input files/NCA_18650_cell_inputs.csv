@@ -1,0 +1,17 @@
+Input,Units,Baseline,Low,High
+Steel,g,13.23,12.74,24.47
+Aluminum,g,1.65,1.55,1.74
+Copper Wire,g,4.97,4.67,5.26
+Cathode Active material,g,15.33,14.43,16.23
+Graphite,g,6.78,2.78,10.93
+PVDF,g,2.25,1.93,2.58
+LiPF6,g,0.81,0.75,0.86
+EC,g,4.43,4.13,4.94
+Polypropylene,g,0.84,0.79,0.89
+Electricity,kWh/kg battery,7.24,6.36,7.32
+Total,g,50.28,43.76,68.91
+Energy,kWh,0.01,0.009,0.01
+Energy per kmole-Mixing,kWh,272.48,196.19,359.67
+Energy per kmole-calcining,kWh,499.36,299.62,732.4
+Specific Capacity,mAh/kg,180,180,180
+Voltage,V,3.551,3.551,3.551
